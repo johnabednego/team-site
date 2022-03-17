@@ -412,6 +412,29 @@ small{
     }
     
   }
+@media only screen and (max-width:760px){
+    .info{
+        display: flex;
+        flex-direction:column !important;
+        width: 100%;
+    }
+    .board{
+        width: 94%;
+    }
+    
+}
+@media only screen and (max-width:500px){
+    .info{
+        display: flex !important;
+        flex-direction:column !important;
+        width: 100% !important;
+    }
+    .board{
+        width: 94% !important;
+    }
+    
+}
+
   @media only screen and (max-width:500px) {
     /* For mobile phones: */
     *, body{
