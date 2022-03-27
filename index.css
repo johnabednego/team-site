@@ -377,16 +377,7 @@ small{
 
 
 
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width:800px) {
+  @media only screen and (max-width:800px) {
     /* For tablets: */
     *, body{
         margin-right: 0px !important;
@@ -445,9 +436,37 @@ small{
     .col-1, .col-2{
         width: 90% !important;
     }
+    .swiper {
+        width: 80%;
+        height: 80%;
+        margin-left: 90px !important;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+    
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
     
   }
-@media only screen and (max-width:760px){
+
+
+
+
+  @media only screen and (max-width:760px){
     /* for other medium devices*/
     .info{
         display: flex;
@@ -457,8 +476,35 @@ small{
     .board{
         width: 94%;
     }
+    .swiper {
+        width: 100%;
+        height: 100%;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+    
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
     
 }
+
+
+
+
 @media only screen and (max-width:500px){
     .info{
         display: flex !important;
@@ -468,6 +514,29 @@ small{
     .board{
         width: 94% !important;
     }
+    .swiper {
+        width: 100%;
+        height: 100%;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+    
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
     
 }
 
@@ -532,12 +601,21 @@ small{
     }
     
   }
+
+
+
+
+
+
   @media (min-width: 992px){
     .a1-container{
         max-width: 960px;
     }
 }
-@keyframes wipe-enter {
+
+
+
+/* @keyframes wipe-enter {
 	0% {
 		transform: scale(0, .025);
 	}
@@ -550,5 +628,5 @@ small{
       animation-name: wipe-enter;
       animation-duration: 1s;
     
-    }
-  }
+    }} */
+  
