@@ -88,6 +88,10 @@ body{
     position: relative;
     padding-top: 3% !important;
 }
+.services{
+    margin-top: 5% ;
+    margin-bottom: 10%;
+}
 .slide img{
     cursor: pointer;
     height: 250px !important;
@@ -332,6 +336,37 @@ small{
     font-size: 1rem;
     text-decoration: none;
 }
+.swiper {
+    width: 50%;
+    height: 50%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 50%;
+    height: 100px;
+    object-fit: cover;
+  }
 
 
 
@@ -413,6 +448,7 @@ small{
     
   }
 @media only screen and (max-width:760px){
+    /* for other medium devices*/
     .info{
         display: flex;
         flex-direction:column !important;
@@ -501,3 +537,18 @@ small{
         max-width: 960px;
     }
 }
+@keyframes wipe-enter {
+	0% {
+		transform: scale(0, .025);
+	}
+	50% {
+		transform: scale(1, .025);
+	}
+}
+@media (prefers-reduced-motion: no-preference) {
+    .square-animation {
+      animation-name: wipe-enter;
+      animation-duration: 1s;
+    
+    }
+  }
