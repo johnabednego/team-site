@@ -116,13 +116,14 @@ body{
     padding: 40px !important;
     width: 20%;
     max-width: 100%;
-    background-color: #F8F8F8 !important;
+    background-image: radial-gradient(red 5%, yellow 15%, #009CFF 60%)!important;
     transition: .5s;
     border-radius: 6px !important;
     text-align: center !important;
     padding: 3rem !important;
     padding-bottom: -0.5rem !important;
     height: 100% !important;
+    color: black;
     display: block;
     align-items: center !important;
 }
@@ -136,6 +137,7 @@ body{
 }
 .board:hover{
     margin-top: -0.5px;
+    color: #777;
     background: #fff!important;
     box-shadow: 0 0 45px rgb(0 0 0 / 7%);
 }
@@ -336,43 +338,51 @@ small{
     font-size: 1rem;
     text-decoration: none;
 }
-.swiper {
-    width: 50%;
-    height: 50%;
-  }
-
-  .swiper-slide {
+ /*services section*/
+ .services{
+     margin-top:-5px;
+ }
+ .services .section-title{
+     margin-left: 40%;
+ }
+ .sec-items{
+     display: flex;
+     flex-wrap: wrap;
+ }
+.left{
+    margin-top: 2%;
+    margin-left: 8%;
+    border-left:solid #009CFF;
+}
+.cir{
+    background-color: #009CFF;
+    height: 10px;
+    border-radius: 100%;
+    width: 1%;
+}
+.s-Item{
+    margin-left: 10px;
+    margin-top: -15px;
+    height: 50vh;
+}
+#bIm{
+    width: 100%;
+}
+.ser-read{
+    color: #fff !important;
+    border-radius: 50rem !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    padding-right: 3rem !important;
+    padding-left: 3rem !important;
+    background-color: #009CFF;
+    border-color: #009CFF;
+    margin-left: 20%;
+    cursor: pointer;
+    text-decoration: none;
     text-align: center;
-    font-size: 18px;
-    background: #fff;
-
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 50%;
-    height: 100px;
-    object-fit: cover;
-  }
-
-
-
-
-
-
+    vertical-align: middle;
+}
 
 
 
@@ -435,32 +445,20 @@ small{
     }
     .col-1, .col-2{
         width: 90% !important;
-    }
-    .swiper {
-        width: 80%;
-        height: 80%;
-        margin-left: 90px !important;
-      }
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-    
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-      }
-    
+    } 
+     .services{
+         width:100%;
+         align-items: center;
+         text-align: center;
+     }
+     .services h6{
+        text-align: left !important;
+        margin-left: 0px !important;
+     }
+     .sec-items{
+         display:flex;
+         flex-wrap: wrap;
+     }
   }
 
 
@@ -476,69 +474,17 @@ small{
     .board{
         width: 94%;
     }
-    .swiper {
-        width: 100%;
-        height: 100%;
-      }
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-    
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-      }
-    
+    .left{
+        width: 30%;
+        margin-left: 15%;
+    }
+    .s-Item img{
+        width:100% !important
+    }
 }
 
 
 
-
-@media only screen and (max-width:500px){
-    .info{
-        display: flex !important;
-        flex-direction:column !important;
-        width: 100% !important;
-    }
-    .board{
-        width: 94% !important;
-    }
-    .swiper {
-        width: 100%;
-        height: 100%;
-      }
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-    
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-      }
-    
-}
 
   @media only screen and (max-width:500px) {
     /* For mobile phones: */
@@ -600,6 +546,23 @@ small{
         width: 90% !important;
     }
     
+    .info{
+        display: flex !important;
+        flex-direction:column !important;
+        width: 100% !important;
+    }
+    .board{
+        width: 94% !important;
+    }
+    .left{
+        margin-top: 8%;
+        width: 100%;
+        margin-left: 10%;
+        margin-right: 5%;
+    }
+    .s-Item img{
+        width:70% !important
+    }
   }
 
 
@@ -607,9 +570,13 @@ small{
 
 
 
-  @media (min-width: 992px){
+  @media (min-width: 900px){
     .a1-container{
         max-width: 960px;
+    }
+    .left{
+        margin-top: 5%;
+        margin-left: 15%;
     }
 }
 
