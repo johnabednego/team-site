@@ -36,7 +36,7 @@
                         <div class="dropdown-content">
                             <a href="#features">Features</a>
                             <a href="#team">Our Team</a>
-                            <a href="#">Contact Us</a>
+                            <a href="#contact">Contact Us</a>
                         </div>
                     </div>
                 </div>
@@ -264,7 +264,24 @@
             </div>
         </div>
         </div>
-        <div class="contact" id="contact"></div>
+        <div class="contact" id="contact">
+            <div class="container">
+                <form class="form form--hidden" id="contact_us" method="post">
+                    <h1 class="form__title">Contact Us</h1>
+                    <div class="form__input-group">
+                        <input type="text" id="first_name" class="form__input" autofocus placeholder="Full Name" required>
+                    </div>
+                    <div class="form__input-group">
+                        <input type="email" class="form__input" autofocus placeholder="Email Address" required>
+                    </div>
+                    <div class="form__input-group">
+                        <input type="number" class="form__input" autofocus placeholder="Phone Number" required>
+                    </div>
+                    <textarea name="comment" class="text-input" autofocus placeholder="How can we help you!!" required></textarea>
+                    <button class="form__button" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
 
     </main>
 </body>
