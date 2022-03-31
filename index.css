@@ -562,10 +562,12 @@ small{
     border-top-right-radius: 15%;
     border-bottom-left-radius: 15%;
     margin-bottom: 3%;
-    -webkit-appearance: none;
-    -moz-appearance: textfield;
-}
 
+}
+.form__input #number{
+    -webkit-appearance: none;
+      -moz-appearance: textfield;
+} 
 
 
 
@@ -745,6 +747,7 @@ small{
         margin-left: 2%;
     }
     .f-tem{
+        margin-top: 10%;
         margin-left: 5%;
     }
 }
