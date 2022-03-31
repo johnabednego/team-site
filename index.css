@@ -562,6 +562,8 @@ small{
     border-top-right-radius: 15%;
     border-bottom-left-radius: 15%;
     margin-bottom: 3%;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
 }
 
 
