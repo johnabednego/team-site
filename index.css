@@ -564,7 +564,8 @@ small{
     margin-bottom: 3%;
 
 }
-.form__input #number{
+#number::-webkit-outer-spin-button,
+#number::-webkit-inner-spin-button{
     -webkit-appearance: none;
       -moz-appearance: textfield;
 } 
